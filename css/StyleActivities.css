@@ -1,0 +1,107 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0;
+    box-sizing: border-box;
+}
+hr{
+    width: 300px;
+    height: 5px;
+    background-color: black;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+p.bio {
+    text-align: center;
+}
+img.logo{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display:  block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 0px  rgba(0, 0, 0, 0.7)
+}
+h1.name{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+
+
+
+}
+ul{
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+
+}
+span.slogan{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgba(51, 51, 51 0.7);
+    margin-bottom: 35px;
+}
+.social-img ul{
+    margin: 0;
+    text-align: center;
+    width: 100%
+    margin-bottom: 50px;
+}
+.social-img ul li{
+    display: inline;
+    background: rgba(204, 204, 204, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 150ms ease-in-out;
+}
+.social-img ul li:hover{
+    background: #ccc;
+
+
+
+}
+video{
+    width: 600px;
+    height: 1000px;
+    display: block;
+    margin: 0 auto;
+
+}
+.navbar{
+    display: flex;
+    background-color: #333;
+     color: white;
+     
+    
+}
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    list-style: none;
+}
+ul li
+{
+    margin: 0 1rem;
+
+}
