@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 
-    <link rel="stylesheet"  type="text/css" href="../css/StyleAdvisor.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.8.1/css/foundation.min.css">
+    <link rel="stylesheet"  type="text/css" href="../css/StyleAdvisor.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>My CSTU Passport</title>
@@ -14,23 +17,26 @@
 </head>
 <body>
 
-    <section class="navbar">
-        <div class="CSlogo">
-            <img src="../image/CSlogo.png">
-        </div>
-        <ul class="navbar">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../html/MyAdvisor.html">My Advisor</a></li>
-            <li><a href="../html/MyActivities.html">My Activities</a></li>
-            <li><a href="#"></a>Sport Day</li>
-        </ul>
-    </section>
+<section class="header">
+        <nav>
+            <a herf="index.html"><img src="../image/CSlogo.png"></a>
+            <div class="nav-link" id="navLink">
+                <i class="fa fa-window-close"onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="html/AboutME.html">AboutME</a></li>
+                    <li><a href="html/MyAdvisor.html">My Advisor</a></li>
+                    <li><a href="html/MyActivities.html">My Activities</a></li>
+                    
+                </ul>
+            
+            </div>
+            <i class="fa fa-bars" inclick="showMenu()"></i>
+        </nav>
         
-    <header>
-        <div class="header-info">
+        
+        <div class="huakor">
             <h1>My Advisor</h1>
         </div>
-    </header>
     <div class="container"> 
         <img class="logo"   src="../image/MyAdvisor.png"  alt=""><br>
         <h2 class="name"> ผศ.ดร.เด่นดวง ประดับสุวรรณ </h2>
@@ -44,20 +50,32 @@
             TEL:0-2986-9156 ต่อ 203<br>
             Mail:denduang@tu.ac.th<br>
         </p>
+        <br>
         <h3>การศึกษา (EDUCATION)</h3>
         <p>
             - D.Eng. (Computer Science), Tokyo Institute of Technology, Japan, 2548<br>
             - วท.ม. (วิทยาการคอมพิวเตอร์) , จุฬาลงกรณ์มหาวิทยาลัย, ประเทศไทย, 2542<br>
             - วท.บ. (วิทยาการคอมพิวเตอร์(เกียรตินิยมอันดับสอง)) , มหาวิทยาลัยรามคำแหง, ประเทศไทย, 2538<br>
         </p>
+        <br>
         <h3>ผลงานตีพิมพ์ทั้งหมด (ALL PUBLICATIONS)</h3>
         <p>
             - Google Scholar Profile<br>
             - ResearchGate Profile<br>
         </p>
-        <hr>
-
     </div>
+</section> 
+    <script>
+    var navLink = document.getElementById("navLink");
     
+    function showMenu(){
+        navLink.style.right = "0";
+    }
+    
+    
+    function hideMenu(){
+        navLink.style.right = "-200px";
+    }
+    </script>
 </body>
 </html>
