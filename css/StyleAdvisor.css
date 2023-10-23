@@ -1,17 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    widows: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1697846400&semt=ais');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-content: center;
+}
+nav img{
+    width: 70px;
+}
+.nav-link{
+    flex 1;
+    text-align: right;    
+}
+.nav-link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-link ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-link ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-link ul li:hover::after{
+    width: 90%;
+    
+}
+
 .container {
     max-width: 600px;
     margin: 0 auto;
     margin-top: 50px;
     padding: 0;
     box-sizing: border-box;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
 }
+
 hr{
     width: 300px;
-    height: 5px;
+    height: px;
     background-color: black;
-    margin-bottom: 50px;
-    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 h2{
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -21,10 +80,11 @@ h2{
     margin-bottom: 20px;
     
 }
-
-p.bio {
+.huakor{
+    color: #fff;
     text-align: center;
 }
+
 img.logo{
     width: 300px;
     height: 300px;
@@ -34,20 +94,8 @@ img.logo{
     margin-right: auto;
     box-shadow: 0px 0px 0px  rgba(0, 0, 0, 0.7)
 }
-h1.name{
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-}
-ul.Git{
-    margin: 0;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 50px;
 
-}
+
 span.slogan{
     display: block;
     text-align: center;
@@ -56,88 +104,43 @@ span.slogan{
     color: rgba(51, 51, 51 0.7);
     margin-bottom: 35px;
 }
-.social-img ul{
-    margin: 0;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 50px;
-}
-.social-img ul li{
-    display: inline;
-    background: rgba(204, 204, 204, 0.5);
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background 150ms ease-in-out;
-}
-.social-img ul li:hover{
-    background: #ccc;
-
-
-
-}
-video{
-    width: 600px;
-    height: 1000px;
-    display: block;
-    margin: 0 auto;
-
-}
-.navbar{
-    display: flex;
-    background-color: #333;
-     color: white;
-     
-    
-}
-ul.navbar{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    
-}
-.navbar ul li
-{
-    margin: 0 1rem;
-    cursor: pointer;
-    transition: background 150ms ease-in-out;
-    
-}
-.navbar ul li a
-{
-    color: white;
-    text-decoration: none;
-    
-}
-
-.CSlogo{
-    width: 100px;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    
-    
-}
-header{
-    height: 320px;
-    display: flex;
-    justify-content:  center;
-    align-items: center;
-    
-}
-.header-info{
-    width: 1000px;
-    text-align: center;
-    height: 50px;
-
-}
-h3{
+.content{
+    color: #fff;
     text-align: center;
     
 }
-p{
-   text-align: center; 
+nav .fa{
+    display: none;
 }
+
+@media(max-width: 700px){
+    .text-box h1{
+    font-size: 20px;
+    }
+    .nav-link ul li{
+        display: block;
+    }
+    .nav-link{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        widows: -200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin 10px;
+        font-size: 22px;
+        cursor: pointer;  
+    }
+    .nav-link ul{
+        padding: 30px;
+    }
+    
+}
+
